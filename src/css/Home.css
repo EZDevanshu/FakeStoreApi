@@ -1,0 +1,302 @@
+/* 🔹 Body Background */
+body {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    box-sizing: border-box;
+    margin: 0;
+    overflow: auto;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    
+}
+/* 🔹 Category Bar */
+.category-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 25px;
+    border-radius: 12px;
+    margin: 10px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.category-item {
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #212121;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+.category-item img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 6px;
+}
+
+.category-item span {
+    display: block;
+    margin-top: 2px;
+}
+
+.category-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    background: #ffffff;
+    color: #2874f0;
+}
+
+/* 🔹 Dropdown Menu */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 8px;
+    padding: 8px 0;
+    min-width: 220px;
+    overflow: visible;
+    scrollbar-width: none ;
+    max-height: none ;
+}
+.dropdown-menu {
+  position: absolute !important;
+  overflow: visible !important;
+  max-height: unset !important;
+  width: auto !important;
+  z-index: 99999 !important;
+}
+
+.dropdown-menu .dropdown-item {
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 500;
+    overflow: visible;
+    scrollbar-width: none ;
+    max-height: none ;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+  display: none;           /* Chrome */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: #f0f6ff;
+    color: #2874f0;
+}
+
+/* 🔹 Carousel (Banner) */
+#flipkartCarousel {
+    margin: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+#flipkartCarousel img {
+    border-radius: 15px;
+}
+
+/* 🔹 Section Title */
+.slider-title-header {
+    font-weight: 700;
+    color: #212121;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+/* 🔹 Product Cards */
+.product-cards-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 10px 0;
+    position: relative;
+}
+
+.product-cards-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.individual-product-card {
+    position: relative;
+    min-width: 220px;
+    flex-shrink: 0;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.individual-product-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: #2874f0;
+}
+
+.product-image-container {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-display-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* 🔹 Product Title & Price */
+.category-title-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.price-info-text {
+    font-size: 1.1rem;
+    color: #28a745;
+    font-weight: 700;
+}
+
+/* 🔹 Badge for products */
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: linear-gradient(45deg, #ff6f61, #ff4081);
+    color: white;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+/* 🔹 Slider Arrows */
+.navigation-arrow-left,
+.navigation-arrow-right {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background: #2874f0;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 10;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.navigation-arrow-left:hover,
+.navigation-arrow-right:hover {
+    background: #1a5bb8;
+}
+
+.navigation-arrow-left {
+    left: 10px;
+}
+
+.navigation-arrow-right {
+    right: 10px;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 768px) {
+    .slider-title-header {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .individual-product-card {
+        min-width: 180px;
+    }
+
+    .navigation-arrow-left,
+    .navigation-arrow-right {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .individual-product-card {
+        min-width: 160px;
+        padding: 15px;
+    }
+
+    .product-image-container {
+        height: 130px;
+    }
+
+    .category-title-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* 🔹 Banner products */
+.product-image img {
+    height: 250px;
+    border-radius: 12px;
+}
+
+/* Bootstrap ke default left-right controls hatao */
+.carousel-control-prev,
+.carousel-control-next {
+    display: none !important;
+}
+
+.product{
+    text-decoration: none;
+}
+
+.stylish-carousel {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  margin-bottom: 30px;
+}
+
+.carousel-img {
+  height: 380px;
+  object-fit: cover;
+}
+
+.custom-control {
+  width: 60px;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+

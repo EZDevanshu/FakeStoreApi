@@ -1,0 +1,200 @@
+/* Background */
+.login-container {
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #a2d2ff, #bde0fe); 
+}
+
+/* Glassmorphic Card */
+.login-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    width: 100%;
+    max-width: 420px;
+    transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logo */
+.logo-section {
+    text-align: center;
+    padding: 25px 20px 10px;
+}
+
+.logo-section img {
+    height: 50px;
+    width: auto;
+}
+
+/* Form Section */
+.form-section {
+    padding: 30px 25px;
+}
+
+/* Title */
+.welcome-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2874f0;
+    margin-bottom: 25px;
+}
+
+/* Google Button */
+.google-btn {
+    background: white;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 18px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    color: #444;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.google-btn:hover {
+    background: #f8f9fa;
+    border-color: #bbb;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #ddd;
+}
+
+.divider span {
+    background: white;
+    padding: 0 12px;
+}
+
+/* Form Inputs */
+.form-label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.form-control {
+    border: 1.5px solid #ddd;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2874f0;
+    box-shadow: 0 0 0 0.2rem rgba(40, 116, 240, 0.25);
+}
+
+/* Remember me + Forgot password */
+.form-check {
+    margin: 15px 0;
+}
+
+.form-check-input:checked {
+    background-color: #2874f0;
+    border-color: #2874f0;
+}
+
+.forgot-password {
+    color: #2874f0;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+    background: #2874f0;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #1a5bb8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(40, 116, 240, 0.3);
+}
+
+/* Sign Up link */
+.signup-link {
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.signup-link a {
+    color: #2874f0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-card {
+        margin: 10px;
+        border-radius: 12px;
+    }
+
+    .form-section {
+        padding: 25px 18px;
+    }
+
+    .welcome-title {
+        font-size: 1.4rem;
+    }
+}
+
+
+.logo-section{    
+    display: flex;
+    justify-content: center;
+}

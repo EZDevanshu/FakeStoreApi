@@ -1,0 +1,50 @@
+.navFlip {
+  background-color: #2874f0;  
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link-custom {
+  color: white !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link-custom:hover {
+  color: #ffe500 !important; 
+}
+
+.search-bar {
+  border-radius: 6px 0 0 6px;
+  border: none;
+}
+
+.btn-search {
+  background-color: #ffe500;
+  border-radius: 0 6px 6px 0;
+  border: none;
+}
+
+.btn-search:hover {
+  background-color: #ffcd00;
+}
+
+.btn-login {
+  background-color: white;
+  color: #2874f0;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #f1f1f1;
+}
+.navbar{
+  overflow: visible;
+}
+
+.navbar,
+.navbar * {
+  overflow: visible !important;
+}
