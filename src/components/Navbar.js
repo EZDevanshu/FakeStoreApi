@@ -34,7 +34,7 @@ function Navbar() {
                             </li>
 
                             <li className="nav-item dropdown">
-                                <a className="btn btn-login fw-semibold dropdown-toggle px-4" role="button" data-bs-toggle="dropdown"
+                                <a href="/" className="btn btn-login fw-semibold dropdown-toggle px-4" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Login
                                 </a>

@@ -201,7 +201,7 @@ function HomePage() {
                 </div>
                 <div className="col">
                     <div className="ms-5 d-flex align-items-center">
-                        <img src="https://rukminim1.flixcart.com/fk-p-flap/3200/4920/image/ce3cf81edb760559.jpg?q=60" style={{ height: '330px' }} />
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/3200/4920/image/ce3cf81edb760559.jpg?q=60" style={{ height: '330px' }} alt="Banner image"  />
                     </div>
                 </div>
             </div>
