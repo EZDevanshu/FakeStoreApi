@@ -41,11 +41,11 @@ function Navbar() {
                                 <ul className="dropdown-menu dropdown-menu-end">
                                     <li><Link className="dropdown-item" to="/login">Login</Link></li>
                                     <li><Link className="dropdown-item" to="/myProfile">My Profile</Link></li>
-                                    <li><a className="dropdown-item" href="#">Flipkart Plus Zone</a></li>
-                                    <li><a className="dropdown-item" href="#">Orders</a></li>
-                                    <li><a className="dropdown-item" href="#">Wishlist</a></li>
-                                    <li><a className="dropdown-item" href="#">Coupons</a></li>
-                                    <li><a className="dropdown-item" href="#">Gift Cards</a></li>
+                                    <li><a className="dropdown-item" href="/">Flipkart Plus Zone</a></li>
+                                    <li><a className="dropdown-item" href="/">Orders</a></li>
+                                    <li><a className="dropdown-item" href="/">Wishlist</a></li>
+                                    <li><a className="dropdown-item" href="/">Coupons</a></li>
+                                    <li><a className="dropdown-item" href="/">Gift Cards</a></li>
                                 </ul>
                             </li>
 
@@ -62,14 +62,14 @@ function Navbar() {
                             </li>
 
                             <li className="nav-item dropdown mx-2">
-                                <a className="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link nav-link-custom dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     More
                                 </a>
                                 <ul className="dropdown-menu dropdown-menu-end">
-                                    <li><a className="dropdown-item" href="#">Notification Preferences</a></li>
-                                    <li><a className="dropdown-item" href="#">24x7 Customer Care</a></li>
-                                    <li><a className="dropdown-item" href="#">Advertise</a></li>
-                                    <li><a className="dropdown-item" href="#">Download App</a></li>
+                                    <li><a className="dropdown-item" href="/">Notification Preferences</a></li>
+                                    <li><a className="dropdown-item" href="/">24x7 Customer Care</a></li>
+                                    <li><a className="dropdown-item" href="/">Advertise</a></li>
+                                    <li><a className="dropdown-item" href="/">Download App</a></li>
                                 </ul>
                             </li>
                         </ul>

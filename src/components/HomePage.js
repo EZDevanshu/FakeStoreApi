@@ -67,11 +67,11 @@ function HomePage() {
                             <div className="mt-2 dropdown-toggle" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}
                                 data-bs-toggle="dropdown">Fashion</div>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Men's Top Wear</a></li>
-                                <li><a className="dropdown-item" href="#">Men's Bottom Wear</a></li>
-                                <li><a className="dropdown-item" href="#">Women Ethnic</a></li>
-                                <li><a className="dropdown-item" href="#">Women Western</a></li>
-                                <li><a className="dropdown-item" href="#">Kids</a></li>
+                                <li><a className="dropdown-item" href="/">Men's Top Wear</a></li>
+                                <li><a className="dropdown-item" href="/">Men's Bottom Wear</a></li>
+                                <li><a className="dropdown-item" href="/">Women Ethnic</a></li>
+                                <li><a className="dropdown-item" href="/">Women Western</a></li>
+                                <li><a className="dropdown-item" href="/">Kids</a></li>
                             </ul>
                         </div>
 
@@ -81,11 +81,11 @@ function HomePage() {
                             <div className="mt-2 dropdown-toggle" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}
                                 data-bs-toggle="dropdown">Electronics</div>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Mobiles & Accessories</a></li>
-                                <li><a className="dropdown-item" href="#">Smart Wearables</a></li>
-                                <li><a className="dropdown-item" href="#">Laptops</a></li>
-                                <li><a className="dropdown-item" href="#">Speakers</a></li>
-                                <li><a className="dropdown-item" href="#">Camera</a></li>
+                                <li><a className="dropdown-item" href="/">Mobiles & Accessories</a></li>
+                                <li><a className="dropdown-item" href="/">Smart Wearables</a></li>
+                                <li><a className="dropdown-item" href="/">Laptops</a></li>
+                                <li><a className="dropdown-item" href="/">Speakers</a></li>
+                                <li><a className="dropdown-item" href="/">Camera</a></li>
                             </ul>
                         </div>
 
@@ -94,10 +94,10 @@ function HomePage() {
                             <div className="mt-2 dropdown-toggle" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}
                                 data-bs-toggle="dropdown">Home</div>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Kitchen</a></li>
-                                <li><a className="dropdown-item" href="#">Furniture</a></li>
-                                <li><a className="dropdown-item" href="#">Decor</a></li>
-                                <li><a className="dropdown-item" href="#">Lighting</a></li>
+                                <li><a className="dropdown-item" href="/">Kitchen</a></li>
+                                <li><a className="dropdown-item" href="/">Furniture</a></li>
+                                <li><a className="dropdown-item" href="/">Decor</a></li>
+                                <li><a className="dropdown-item" href="/">Lighting</a></li>
                             </ul>
                         </div>
 
@@ -119,10 +119,10 @@ function HomePage() {
                             <div className="mt-2 dropdown-toggle" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}
                                 data-bs-toggle="dropdown">Beauty, Toys & More</div>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Beauty & Grooming</a></li>
-                                <li><a className="dropdown-item" href="#">Food & Beverages</a></li>
-                                <li><a className="dropdown-item" href="#">Toys</a></li>
-                                <li><a className="dropdown-item" href="#">Sports</a></li>
+                                <li><a className="dropdown-item" href="/">Beauty & Grooming</a></li>
+                                <li><a className="dropdown-item" href="/">Food & Beverages</a></li>
+                                <li><a className="dropdown-item" href="/">Toys</a></li>
+                                <li><a className="dropdown-item" href="/">Sports</a></li>
                             </ul>
                         </div>
 
@@ -143,9 +143,9 @@ function HomePage() {
             >
                 {/* Indicators */}
                 <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#flipkartCarousel" data-bs-slide-to="0" className="active" />
-                    <button type="button" data-bs-target="#flipkartCarousel" data-bs-slide-to="1" />
-                    <button type="button" data-bs-target="#flipkartCarousel" data-bs-slide-to="2" />
+                    <button type="button" data-bs-target="/flipkartCarousel" data-bs-slide-to="0" className="active" />
+                    <button type="button" data-bs-target="/flipkartCarousel" data-bs-slide-to="1" />
+                    <button type="button" data-bs-target="/flipkartCarousel" data-bs-slide-to="2" />
                 </div>
 
                 {/* Slides */}
@@ -176,11 +176,11 @@ function HomePage() {
                 </div>
 
                 {/* Controls */}
-                <button className="carousel-control-prev custom-control" type="button" data-bs-target="#flipkartCarousel" data-bs-slide="prev">
+                <button className="carousel-control-prev custom-control" type="button" data-bs-target="/flipkartCarousel" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" />
                 </button>
 
-                <button className="carousel-control-next custom-control" type="button" data-bs-target="#flipkartCarousel" data-bs-slide="next">
+                <button className="carousel-control-next custom-control" type="button" data-bs-target="/flipkartCarousel" data-bs-slide="next">
                     <span className="carousel-control-next-icon" />
                 </button>
             </div>

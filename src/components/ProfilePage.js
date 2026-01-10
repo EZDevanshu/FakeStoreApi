@@ -12,12 +12,12 @@ function ProfilePage() {
                         <small className="text-muted">user@123</small>
                     </div>
                     <ul className="list-group profile-sidebar-menu">
-                        <a href="#" className="list-group-item active">👤 My Profile</a>
-                        <a href="#" className="list-group-item">📦 My Orders</a>
-                        <a href="#" className="list-group-item">❤️ Wishlist</a>
-                        <a href="#" className="list-group-item">🎟️ Coupons</a>
-                        <a href="#" className="list-group-item">🎁 Gift Cards</a>
-                        <a href="#" className="list-group-item">🔔 Notifications</a>
+                        <a href="/" className="list-group-item active">👤 My Profile</a>
+                        <a href="/" className="list-group-item">📦 My Orders</a>
+                        <a href="/" className="list-group-item">❤️ Wishlist</a>
+                        <a href="/" className="list-group-item">🎟️ Coupons</a>
+                        <a href="/" className="list-group-item">🎁 Gift Cards</a>
+                        <a href="/" className="list-group-item">🔔 Notifications</a>
                     </ul>
                 </div>
 

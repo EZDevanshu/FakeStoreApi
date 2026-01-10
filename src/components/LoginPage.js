@@ -63,14 +63,14 @@ function LoginPage() {
                                         Remember me
                                     </label>
                                 </div>
-                                <a href="#" className="forgot-password">Forgot Password?</a>
+                                <a href="/" className="forgot-password">Forgot Password?</a>
                             </div>
 
                             <button type="submit" className="btn login-btn">Login</button>
                         </form>
 
                         <div className="signup-link">
-                            Don't have an account? <a href="#">Sign Up</a>
+                            Don't have an account? <a href="/">Sign Up</a>
                         </div>
                     </div>
                 </div>
