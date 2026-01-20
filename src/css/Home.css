@@ -6,8 +6,9 @@ body {
     overflow: auto;
     font-family: 'Segoe UI', sans-serif;
     overflow-x: hidden;
-    
+
 }
+
 /* 🔹 Category Bar */
 .category-bar {
     display: flex;
@@ -19,7 +20,7 @@ body {
     gap: 25px;
     border-radius: 12px;
     margin: 10px 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .category-item {
@@ -47,7 +48,7 @@ body {
 
 .category-item:hover {
     transform: translateY(-6px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     background: #ffffff;
     color: #2874f0;
 }
@@ -66,15 +67,16 @@ body {
     padding: 8px 0;
     min-width: 220px;
     overflow: visible;
-    scrollbar-width: none ;
-    max-height: none ;
+    scrollbar-width: none;
+    max-height: none;
 }
+
 .dropdown-menu {
-  position: absolute !important;
-  overflow: visible !important;
-  max-height: unset !important;
-  width: auto !important;
-  z-index: 99999 !important;
+    position: absolute !important;
+    overflow: visible !important;
+    max-height: unset !important;
+    width: auto !important;
+    z-index: 99999 !important;
 }
 
 .dropdown-menu .dropdown-item {
@@ -82,12 +84,13 @@ body {
     padding: 10px 20px;
     font-weight: 500;
     overflow: visible;
-    scrollbar-width: none ;
-    max-height: none ;
+    scrollbar-width: none;
+    max-height: none;
 }
 
 .dropdown-menu::-webkit-scrollbar {
-  display: none;           /* Chrome */
+    display: none;
+    /* Chrome */
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -100,7 +103,7 @@ body {
     margin: 20px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 #flipkartCarousel img {
@@ -137,7 +140,7 @@ body {
     flex-shrink: 0;
     background: white;
     border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -146,7 +149,7 @@ body {
 
 .individual-product-card:hover {
     transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     border-color: #2874f0;
 }
 
@@ -278,25 +281,107 @@ body {
     display: none !important;
 }
 
-.product{
+.product {
     text-decoration: none;
 }
 
 .stylish-carousel {
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  margin-bottom: 30px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
 }
 
 .carousel-img {
-  height: 380px;
-  object-fit: cover;
+    height: 380px;
+    object-fit: cover;
 }
 
 .custom-control {
-  width: 60px;
-  opacity: 0.7;
-  transition: 0.3s ease;
+    width: 60px;
+    opacity: 0.7;
+    transition: 0.3s ease;
 }
 
+
+/* ✅ Mobile Responsive Fix */
+
+/* 🔹 Category Section */
+.category-scroll-wrapper {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    gap: 15px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.category-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-3px);
+    color: var(--primary-color);
+}
+
+.category-item img {
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover img {
+    transform: scale(1.1);
+}
+
+/* 🔹 Hover Effect for Images */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Responsive */
+@media (max-width: 768px) {
+    .category-scroll-wrapper {
+        justify-content: flex-start;
+    }
+
+    .slider-title-header {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .individual-product-card {
+        min-width: 160px !important;
+    }
+
+    .product-image-container {
+        height: 140px;
+    }
+
+    .carousel-img {
+        height: 200px;
+    }
+
+    .category-bar {
+        display: none;
+        /* Hide old category bar if present */
+    }
+}

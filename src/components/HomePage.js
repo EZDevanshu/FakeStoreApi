@@ -46,26 +46,27 @@ function HomePage() {
 
     return (
         <>
-            <div className="bg-white shadow mt-2 border-bottom mb-3 category-container">
-                <div className="container-fluid px-5 py-2">
-                    <div className="d-flex justify-content-between text-center">
-                        <div className="px-3" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}>
+            <div className="bg-white shadow mt-2 border-bottom mb-3 category-container fade-in">
+                <div className="container-fluid px-2 px-md-5 py-2">
+                    <div className="d-flex text-center category-scroll-wrapper">
+                        <div className="category-item">
                             <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" width="64"
                                 alt="Grocery" />
                             <div className="mt-2">Grocery</div>
                         </div>
 
-                        <div className="px-3" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}>
+                        <div className="category-item">
                             <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" width="64"
                                 alt="Mobiles" />
                             <div className="mt-2">Mobiles</div>
                         </div>
 
-                        <div className="dropdown px-3">
-                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/0d75b34f7d8fbcb3.png?q=100" width="64"
-                                alt="Fashion" />
-                            <div className="mt-2 dropdown-toggle" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}
-                                data-bs-toggle="dropdown">Fashion</div>
+                        <div className="dropdown category-item">
+                            <div className="dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="https://rukminim1.flixcart.com/flap/128/128/image/0d75b34f7d8fbcb3.png?q=100" width="64"
+                                    alt="Fashion" />
+                                <div className="mt-2">Fashion</div>
+                            </div>
                             <ul className="dropdown-menu">
                                 <li><a className="dropdown-item" href="/">Men's Top Wear</a></li>
                                 <li><a className="dropdown-item" href="/">Men's Bottom Wear</a></li>
@@ -75,11 +76,12 @@ function HomePage() {
                             </ul>
                         </div>
 
-                        <div className="dropdown px-3">
-                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" width="64"
-                                alt="Electronics" />
-                            <div className="mt-2 dropdown-toggle" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}
-                                data-bs-toggle="dropdown">Electronics</div>
+                        <div className="dropdown category-item">
+                            <div className="dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" width="64"
+                                    alt="Electronics" />
+                                <div className="mt-2">Electronics</div>
+                            </div>
                             <ul className="dropdown-menu">
                                 <li><a className="dropdown-item" href="/">Mobiles & Accessories</a></li>
                                 <li><a className="dropdown-item" href="/">Smart Wearables</a></li>
@@ -89,10 +91,11 @@ function HomePage() {
                             </ul>
                         </div>
 
-                        <div className="dropdown px-3">
-                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" width="64" alt="Home" />
-                            <div className="mt-2 dropdown-toggle" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}
-                                data-bs-toggle="dropdown">Home</div>
+                        <div className="dropdown category-item">
+                            <div className="dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" width="64" alt="Home" />
+                                <div className="mt-2">Home</div>
+                            </div>
                             <ul className="dropdown-menu">
                                 <li><a className="dropdown-item" href="/">Kitchen</a></li>
                                 <li><a className="dropdown-item" href="/">Furniture</a></li>
@@ -101,23 +104,24 @@ function HomePage() {
                             </ul>
                         </div>
 
-                        <div className="px-3" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}>
+                        <div className="category-item">
                             <img src="https://rukminim1.flixcart.com/flap/128/128/image/0139228b2f7eb413.jpg?q=100" width="64"
                                 alt="Appliances" />
                             <div className="mt-2">Appliances</div>
                         </div>
 
-                        <div className="px-3" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}>
+                        <div className="category-item">
                             <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" width="64"
                                 alt="Travel" />
                             <div className="mt-2">Travel</div>
                         </div>
 
-                        <div className="dropdown px-3">
-                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" width="64"
-                                alt="Beauty" />
-                            <div className="mt-2 dropdown-toggle" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}
-                                data-bs-toggle="dropdown">Beauty, Toys & More</div>
+                        <div className="dropdown category-item">
+                            <div className="dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" width="64"
+                                    alt="Beauty" />
+                                <div className="mt-2">Beauty, Toys & More</div>
+                            </div>
                             <ul className="dropdown-menu">
                                 <li><a className="dropdown-item" href="/">Beauty & Grooming</a></li>
                                 <li><a className="dropdown-item" href="/">Food & Beverages</a></li>
@@ -126,7 +130,7 @@ function HomePage() {
                             </ul>
                         </div>
 
-                        <div className="px-3" style={{ fontSize: '14px', fontWeight: '500', cursor: 'pointer' }}>
+                        <div className="category-item">
                             <img src="https://rukminim1.flixcart.com/flap/128/128/image/05d708653beff580.png?q=100" width="64"
                                 alt="Two Wheelers" />
                             <div className="mt-2">Two Wheelers</div>
@@ -137,7 +141,7 @@ function HomePage() {
 
             <div
                 id="flipkartCarousel"
-                className="carousel slide stylish-carousel"
+                className="carousel slide stylish-carousel fade-in"
                 data-bs-ride="carousel"
                 data-bs-interval="2500"
             >
@@ -186,10 +190,10 @@ function HomePage() {
             </div>
 
 
-            <div className="row mt-3 mb-3">
-                <div className="col-9" >
-                    <div className="container ms-3">
-                        <h2 className="slider-title-header mb-4">Top Deals</h2>
+            <div className="row mt-3 mb-3 fade-in">
+                <div className="col-lg-9 col-12" >
+                    <div className="container ms-lg-3 ms-0">
+                        <h2 className="slider-title-header mb-4 ps-3 ps-lg-0">Top Deals</h2>
                         <div className="slider-section-wrapper">
                             <div className="product-cards-wrapper">
                                 {
@@ -199,39 +203,39 @@ function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div className="col">
-                    <div className="ms-5 d-flex align-items-center">
-                        <img src="https://rukminim1.flixcart.com/fk-p-flap/3200/4920/image/ce3cf81edb760559.jpg?q=60" style={{ height: '330px' }} alt="Banner"  />
+                <div className="col-lg-3 col-12 mt-3 mt-lg-0">
+                    <div className="ms-0 ms-lg-5 d-flex align-items-center justify-content-center">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/3200/4920/image/ce3cf81edb760559.jpg?q=60" className="img-fluid" style={{ maxHeight: '330px', objectFit: 'contain' }} alt="Banner" loading="lazy" />
                     </div>
                 </div>
             </div>
 
-            <div className="container-fluid py-3">
+            <div className="container-fluid py-3 fade-in">
                 <div className="row g-4">
                     <div className="col-lg-4 col-md-6 col-12">
-                        <div className="product-image">
-                            <img src="https://rukminim1.flixcart.com/fk-p-flap/640/340/image/a8e2ebb6e3486665.jpg?q=60" alt="Floor Mat" />
+                        <div className="product-image hover-effect">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/640/340/image/a8e2ebb6e3486665.jpg?q=60" className="w-100 rounded" alt="Floor Mat" loading="lazy" />
                         </div>
                     </div>
 
                     <div className="col-lg-4 col-md-6 col-12">
-                        <div className="product-image">
-                            <img src="https://rukminim1.flixcart.com/fk-p-flap/640/340/image/a2c99766fe520090.jpg?q=60" alt="Mixer" />
+                        <div className="product-image hover-effect">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/640/340/image/a2c99766fe520090.jpg?q=60" className="w-100 rounded" alt="Mixer" loading="lazy" />
                         </div>
                     </div>
 
                     <div className="col-lg-4 col-md-6 col-12">
-                        <div className="product-image">
-                            <img src="https://rukminim1.flixcart.com/fk-p-flap/640/340/image/1156864a33cbce2e.jpg?q=60" alt="TV" />
+                        <div className="product-image hover-effect">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/640/340/image/1156864a33cbce2e.jpg?q=60" className="w-100 rounded" alt="TV" loading="lazy" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="row mb-3 py-3">
+            <div className="row mb-3 py-3 fade-in">
                 <div className="col d-flex justify-content-center" >
-                    <div className="container-fluid px-5">
-                        <h2 className="slider-title-header mb-3">Tyohaar Trends</h2>
+                    <div className="container-fluid px-2 px-md-5">
+                        <h2 className="slider-title-header mb-3 ps-3 ps-lg-0">Tyohaar Trends</h2>
                         <div className="slider-section-wrapper">
                             <div className="product-cards-wrapper">
                                 {
@@ -243,10 +247,10 @@ function HomePage() {
                 </div>
             </div>
 
-            <div className="row mb-3 py-3">
+            <div className="row mb-3 py-3 fade-in">
                 <div className="col d-flex justify-content-center" >
-                    <div className="container-fluid px-5">
-                        <h2 className="slider-title-header mb-3">Top Rated</h2>
+                    <div className="container-fluid px-2 px-md-5">
+                        <h2 className="slider-title-header mb-3 ps-3 ps-lg-0">Top Rated</h2>
                         <div className="slider-section-wrapper">
                             <div className="product-cards-wrapper">
                                 {

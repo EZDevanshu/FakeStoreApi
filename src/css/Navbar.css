@@ -1,5 +1,5 @@
 .navFlip {
-  background-color: #2874f0;  
+  background-color: #2874f0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -12,7 +12,7 @@
 }
 
 .nav-link-custom:hover {
-  color: #ffe500 !important; 
+  color: #ffe500 !important;
 }
 
 .search-bar {
@@ -40,11 +40,40 @@
 .btn-login:hover {
   background-color: #f1f1f1;
 }
-.navbar{
+
+.navbar {
   overflow: visible;
 }
 
 .navbar,
 .navbar * {
   overflow: visible !important;
+}
+
+/* ✅ Mobile Responsive Fix */
+/* ✅ Mobile Responsive Fix */
+@media (max-width: 992px) {
+  .navbar .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .navbar-brand img {
+    width: 80px !important;
+    height: auto !important;
+  }
+
+  .nav-link-custom {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    padding-bottom: 15px;
+  }
 }

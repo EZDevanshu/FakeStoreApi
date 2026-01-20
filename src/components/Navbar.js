@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <header>
             <nav className="navbar navbar-expand-lg navFlip shadow-sm" style={{ marginBottom: "0" }}>
-                <div className="container-fluid px-5">
+                <div className="container-fluid px-3 px-lg-5">
 
                     <Link className="navbar-brand d-flex align-items-center" to="/">
                         <img
@@ -23,7 +23,7 @@ function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav w-100 align-items-center">
 
-                            <li className="nav-item flex-grow-1 mx-3">
+                            <li className="nav-item flex-grow-1 mx-3 w-100 mt-2 mt-lg-0">
                                 <div className="input-group">
                                     <input type="text" className="form-control search-bar"
                                         placeholder="Search for products, brands and more" />
@@ -33,8 +33,8 @@ function Navbar() {
                                 </div>
                             </li>
 
-                            <li className="nav-item dropdown">
-                                <a href="/" className="btn btn-login fw-semibold dropdown-toggle px-4" role="button" data-bs-toggle="dropdown"
+                            <li className="nav-item dropdown mt-2 mt-lg-0">
+                                <a href="/" className="btn btn-login fw-semibold dropdown-toggle px-4 text-center d-block d-lg-inline-block" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Login
                                 </a>
@@ -49,20 +49,20 @@ function Navbar() {
                                 </ul>
                             </li>
 
-                            <li className="nav-item mx-3">
-                                <Link className="nav-link d-flex align-items-center nav-link-custom" to="/myCart">
+                            <li className="nav-item mx-3 mt-2 mt-lg-0">
+                                <Link className="nav-link d-flex align-items-center justify-content-center nav-link-custom" to="/myCart">
                                     <i className="bi bi-cart"></i>&nbsp;Cart
                                 </Link>
                             </li>
 
-                            <li className="nav-item mx-2">
-                                <Link className="nav-link nav-link-custom" to="/becomeSeller">
+                            <li className="nav-item mx-2 mt-2 mt-lg-0">
+                                <Link className="nav-link nav-link-custom text-center" to="/becomeSeller">
                                     Become a Seller
                                 </Link>
                             </li>
 
-                            <li className="nav-item dropdown mx-2">
-                                <a className="nav-link nav-link-custom dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li className="nav-item dropdown mx-2 mt-2 mt-lg-0">
+                                <a className="nav-link nav-link-custom dropdown-toggle text-center" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     More
                                 </a>
                                 <ul className="dropdown-menu dropdown-menu-end">
