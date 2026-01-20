@@ -191,7 +191,7 @@ function HomePage() {
 
 
             <div className="row mt-3 mb-3 fade-in">
-                <div className="col-lg-9 col-12" >
+                <div className="col-12" >
                     <div className="container ms-lg-3 ms-0">
                         <h2 className="slider-title-header mb-4 ps-3 ps-lg-0">Top Deals</h2>
                         <div className="slider-section-wrapper">
@@ -201,11 +201,6 @@ function HomePage() {
                                 }
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-12 mt-3 mt-lg-0">
-                    <div className="ms-0 ms-lg-5 d-flex align-items-center justify-content-center">
-                        <img src="https://rukminim1.flixcart.com/fk-p-flap/3200/4920/image/ce3cf81edb760559.jpg?q=60" className="img-fluid" style={{ maxHeight: '330px', objectFit: 'contain' }} alt="Banner" loading="lazy" />
                     </div>
                 </div>
             </div>
